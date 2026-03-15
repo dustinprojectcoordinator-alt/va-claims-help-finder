@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a Listing — VA Claims Help Finder</title>
+  <meta name="description" content="Submit your VA claims assistance company for review. We evaluate all submissions against our 5-point quality rubric within 5 business days.">
+  <meta property="og:title" content="Submit a Listing — VA Claims Help Finder">
+  <meta property="og:description" content="Does your company help veterans with VA disability claims? Submit for review.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">⭐ VA Claims Help Finder</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown"><a href="#">Categories ▾</a>
+      <div class="dropdown-menu">
+        <a href="category-appeals.html">Appeals Specialists</a>
+        <a href="category-initial-claims.html">Initial Claims Help</a>
+        <a href="category-psych-eval.html">Psychiatric Evaluations</a>
+        <a href="category-legal.html">Legal Representation</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="how-we-vet.html">How We Vet</a></li>
+    <li><a href="submit-listing.html">Submit</a></li>
+    <li><a href="premium.html">Premium</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <h1>Submit a Listing</h1>
+  <p>We review every submission against our 5-point quality rubric. If you meet the standard, you'll be contacted within 5 business days.</p>
+</section>
+
+<div class="form-wrap">
+  <form id="submit-form">
+    <div class="form-group">
+      <label for="company-name">Company Name *</label>
+      <input type="text" id="company-name" required placeholder="e.g. Veterans Legal Group">
+    </div>
+    <div class="form-group">
+      <label for="website">Website URL *</label>
+      <input type="url" id="website" required placeholder="https://yourcompany.com">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" required placeholder="(555) 555-5555">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" required placeholder="contact@yourcompany.com">
+    </div>
+    <div class="form-group">
+      <label>Categories Served *</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Appeals Specialists</label>
+        <label><input type="checkbox"> Initial Claims Help</label>
+        <label><input type="checkbox"> Psychiatric Evaluations / DBQs</label>
+        <label><input type="checkbox"> Legal Representation</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="accreditation">Accreditation Status *</label>
+      <select id="accreditation" required>
+        <option value="">— Select —</option>
+        <option>VA-Accredited VSO</option>
+        <option>VA-Accredited Agent</option>
+        <option>VA-Accredited Attorney</option>
+        <option>State Bar Member (non-VA-accredited)</option>
+        <option>None / Private Company</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="referral">How did you hear about VA Claims Help Finder?</label>
+      <input type="text" id="referral" placeholder="Google search, veteran group, referral, etc.">
+    </div>
+    <button type="submit" class="btn-primary" style="width:100%; font-size:1rem; padding:1rem;">Submit for Review</button>
+  </form>
+
+  <div id="form-success">
+    ✓ Thank you — we review all submissions within 5 business days. If your company meets our standards, you will be contacted at the email provided.
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>⭐ VA Claims Help Finder</h3>
+      <p>Built by a veteran, for veterans.</p>
+      <p style="margin-top:0.5rem;">📧 <a href="mailto:contact@vaclaimshelp.guide" style="color:rgba(255,255,255,0.7)">contact@vaclaimshelp.guide</a></p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="how-we-vet.html">How We Vet</a>
+      <a href="submit-listing.html">Submit a Listing</a>
+      <a href="premium.html">Premium</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="disclaimer">This directory is for informational purposes only. We do not provide legal advice.</p>
+    <p style="margin-top:0.5rem;">© 2026 VA Claims Help Finder. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
