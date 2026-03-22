@@ -324,7 +324,7 @@ nav {
   transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.25s;
 }
 
-.listing-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.13); }
+.listing-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.13); cursor: pointer; }
 .listing-card.hidden { display: none; }
 
 .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; }
