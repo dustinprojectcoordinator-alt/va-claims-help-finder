@@ -381,8 +381,8 @@
   },
   {
     "id": "attig-steel",
-    "name": "Attig | Curran | Steel, PLLC",
-    "website": "https://attigcurransteel.com",
+    "name": "Attig Steel PLLC",
+    "website": "https://attigsteel.com",
     "phone": "1-888-799-3299",
     "email": null,
     "type": "Law Firm",
@@ -431,8 +431,8 @@
   {
     "id": "perkins-studdard",
     "name": "Perkins Studdard LLC",
-    "website": "https://veterans.perkinslawtalk.com",
-    "phone": "1-888-888-1450",
+    "website": "https://www.perkinsstuddard.com",
+    "phone": "1-770-629-9949",
     "email": null,
     "type": "Law Firm",
     "categories": [
@@ -455,7 +455,7 @@
   {
     "id": "woods-and-woods",
     "name": "Woods & Woods",
-    "website": "https://woodslawyers.com",
+    "website": "https://woodsandwoods.com",
     "phone": "1-866-232-5777",
     "email": null,
     "type": "Law Firm",
@@ -506,7 +506,7 @@
     "id": "veterans-law-group",
     "name": "Veterans Law Group",
     "website": "https://veteranslaw.com",
-    "phone": "1-888-878-9350",
+    "phone": "1-888-811-0523",
     "email": null,
     "type": "Law Firm",
     "categories": [
@@ -522,28 +522,33 @@
     "score": 3.8,
     "reddit_sentiment": "Unknown",
     "review_summary": "Appeals-focused VA disability law firm working exclusively on contingency. Limited public reviews but no adverse findings in our research. VA-accredited attorneys who handle Board of Veterans Appeals and CAVC cases.",
-    "caveat": "Limited public review data available. Verify credentials and ask for references before signing.",
+    "caveat": "Site was temporarily down in March 2026. Email bounced. Verify before contacting.",
     "featured": false,
     "status": "active"
   },
   {
     "id": "cavc-pro-se-practice",
-    "name": "U.S. Court of Appeals for Veterans Claims (CAVC)",
-    "type": "Government",
-    "website": "https://www.uscourts.cavc.gov",
-    "phone": "(202) 501-5970",
-    "score": 5.0,
-    "score_label": "Official Source",
-    "pricing_model": "Free",
-    "accreditation": "Official U.S. Federal Court",
-    "description": "The official federal court for appealing Board of Veterans' Appeals decisions. Includes court forms, e-filing, and resources for veterans representing themselves without an attorney (pro se filers).",
-    "caveat": null,
+    "name": "CAVC Pro Se Practice",
+    "website": "https://www.cavcprose.org",
+    "phone": null,
+    "email": null,
+    "type": "Nonprofit",
     "categories": [
       "Legal",
       "Appeals",
       "Education"
     ],
-    "serves": "National"
+    "service_areas": "National",
+    "pricing_model": "Free",
+    "accreditation": [
+      "IRS-501c3"
+    ],
+    "score": 4.0,
+    "reddit_sentiment": "Good",
+    "review_summary": "Helps veterans represent themselves at the Court of Appeals for Veterans Claims without an attorney. Provides guides, templates, and coaching for pro se filers. A legitimate resource for veterans who want to navigate CAVC on their own terms.",
+    "caveat": null,
+    "featured": false,
+    "status": "active"
   },
   {
     "id": "jan-dils-attorneys",
@@ -573,7 +578,7 @@
   {
     "id": "telemedica",
     "name": "Telemedica (operates as Get My IMD)",
-    "website": "https://telemedica.com",
+    "website": "https://getmyimd.com",
     "phone": "1-888-508-6558",
     "email": null,
     "type": "Medical Eval",
@@ -598,7 +603,7 @@
     "id": "nexus-letters-finnerty",
     "name": "Nexus Letters (nexusletters.com)",
     "website": "https://nexusletters.com",
-    "phone": null,
+    "phone": "1-330-495-8809",
     "email": null,
     "type": "Medical Eval",
     "categories": [
@@ -877,7 +882,7 @@
     "id": "vethelp",
     "name": "VetHelp (vethelp.us)",
     "website": "https://vethelp.us",
-    "phone": null,
+    "phone": "1-727-272-7388",
     "email": null,
     "type": "Nonprofit",
     "categories": [
@@ -924,7 +929,7 @@
     "id": "pat-tillman-foundation",
     "name": "Pat Tillman Foundation",
     "website": "https://pattillmanfoundation.org",
-    "phone": null,
+    "phone": "1-480-621-4075",
     "email": null,
     "type": "Nonprofit",
     "categories": [
