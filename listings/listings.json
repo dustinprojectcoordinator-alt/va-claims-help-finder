@@ -383,7 +383,7 @@
     "id": "attig-steel",
     "name": "Attig Steel PLLC",
     "website": "https://attigsteel.com",
-    "phone": "1-888-799-3299",
+    "phone": null,
     "email": null,
     "type": "Law Firm",
     "categories": [
@@ -399,7 +399,7 @@
     "score": 4.3,
     "reddit_sentiment": "Good",
     "review_summary": "Boutique VA disability law firm with a strong reputation for appeals work. They take cases on contingency and are known for thorough preparation. Smaller firm means more personal attention than some of the larger players.",
-    "caveat": null,
+    "caveat": "No public phone \u2014 consultation form only at attigcurransteel.com.",
     "featured": false,
     "status": "active"
   },
