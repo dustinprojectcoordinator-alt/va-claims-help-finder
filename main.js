@@ -58,14 +58,41 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- SUBMIT FORM ---
   const form = document.getElementById('submit-form');
   if (form) {
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
       const required = form.querySelectorAll('[required]');
       let valid = true;
       required.forEach(f => { if (!f.value.trim()) { f.style.borderColor = 'var(--red)'; valid = false; } else { f.style.borderColor = '#ddd'; } });
-      if (valid) {
-        form.style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
+      if (!valid) return;
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.textContent = 'Submitting…';
+      submitBtn.disabled = true;
+
+      const data = { access_key: '1fa2dcd5-bd67-4a52-add1-2780f72784c2' };
+      form.querySelectorAll('input, textarea, select').forEach(f => {
+        if (f.name || f.id) data[f.name || f.id] = f.value;
+      });
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const json = await res.json();
+        if (json.success) {
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          submitBtn.textContent = 'Submit for Review';
+          submitBtn.disabled = false;
+          alert('Something went wrong. Please try again or email contact@vaclaimshelp.guide');
+        }
+      } catch (err) {
+        submitBtn.textContent = 'Submit for Review';
+        submitBtn.disabled = false;
+        alert('Network error. Please try again or email contact@vaclaimshelp.guide');
       }
     });
   }
